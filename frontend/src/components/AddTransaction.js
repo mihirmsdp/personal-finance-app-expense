@@ -29,7 +29,7 @@ function AddTransaction() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token'); // Assumes JWT is stored in localStorage
-      const response = await axios.post('http://localhost:5000/api/transactions', {
+      const response = await axios.post('https://personal-finance-app-expense-backend.onrender.com/api/transactions', {
         amount: parseFloat(amount),
         type,
         category: type === 'income' ? '' : category, // Send empty category if type is 'income'

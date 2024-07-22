@@ -11,7 +11,7 @@ function DailySummary() {
     const fetchTransactions = async () => {
       try {
         const token = localStorage.getItem('token'); // Assumes JWT is stored in localStorage
-        const res = await axios.get('http://localhost:5000/api/transactions', {
+        const res = await axios.get('https://personal-finance-app-expense-backend.onrender.com/api/transactions', {
           headers: {
             Authorization: `Bearer ${token}`
           }
