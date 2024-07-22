@@ -32,7 +32,7 @@ function Register() {
 
       if (response.data.token) {
         login(response.data.token);
-        navigate('/');
+        navigate('/dashboard');
       } else {
         setError('Registration failed');
       }
