@@ -1,0 +1,29 @@
+.base-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between buttons as needed */
+  }
+  
+  .cartoon-button {
+    background-color: #ffeb3b; /* Button color */
+    color: #000; /* Text color */
+    border: 3px solid #000; /* Black outline */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.5rem; /* Cartoonish text size */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .cartoon-button:hover {
+    transform: scale(1.1);
+  }
+  

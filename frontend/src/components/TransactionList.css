@@ -1,0 +1,228 @@
+/* Container for the entire component */
+.transaction-container {
+    background: rgba(135, 206, 250, 0.5); /* Sky blue with reduced opacity */
+    padding: 2rem;
+    border-radius: 12px; /* Rounded edges */
+    border: 4px solid #000; /* Dark black outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for a lifted effect */
+  }
+  
+  /* Title styling */
+  .title {
+    margin-bottom: 1rem;
+    color: #ffcc00; /* Bright yellow */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+    font-size: 2rem; /* Larger font size */
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #000, /* Black outline */ -1px -1px 0 #000,
+      1px -1px 0 #000, -1px 1px 0 #000;
+    border-bottom: 2px solid #000; /* Dark black line under title */
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #e74c3c; /* Red */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+  }
+  
+  /* Filter container styling */
+  .filter-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 1rem; /* Space between elements */
+    margin-bottom: 1rem;
+  }
+  
+  /* Filter group styling */
+  .filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between elements */
+  }
+  
+  /* Search input styling */
+  .search-input {
+    padding: 0.8rem;
+    border-radius: 12px !important; /* Rounded edges */
+    border: 2px solid #000 !important; /* Dark black outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted effect */
+    margin-right: 1rem; /* Space between search and date filter */
+    font-size: 1rem;
+    width: 150px; /* Narrower width */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  }
+  
+  /* Date filter styling */
+  .date-filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between elements */
+  }
+  
+  /* Date picker styling */
+  .date-picker {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95); /* White background with high opacity */
+    border: 2px solid #000; /* Dark black border */
+    border-radius: 8px; /* Rounded edges */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .date-picker.visible {
+    display: block; /* Show when visible */
+  }
+  
+  /* List styling */
+  .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* List item styling */
+  .list-item {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 12px !important; /* Rounded edges */
+    border: 2px solid #000 !important; /* Dark black outline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted effect */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+  }
+  
+  .list-item:hover {
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly darker on hover */
+  }
+  
+  /* Ensure the first letter of list items is capitalized */
+  .list-item .description::first-letter {
+    text-transform: capitalize;
+  }
+  
+  /* Description styling */
+  .description {
+    font-weight: bold;
+    flex: 1; /* Takes up remaining space */
+    font-size: 1rem; /* Adjust size as needed */
+  }
+  
+  /* Amount styling */
+  .amount {
+    font-weight: bold;
+    font-size: 0.9rem; /* Smaller font size */
+    color: #2ecc71; /* Default color */
+  }
+  
+  /* Expense amount styling */
+  .amount.expense {
+    color: #e74c3c; /* Red */
+  }
+  
+  /* Dropdown styling */
+  .dropdown {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly transparent background */
+    border-radius: 8px; /* Rounded edges */
+    border: 2px solid #000; /* Dark black border */
+  }
+  
+  .dropdown.visible {
+    display: block; /* Show when visible */
+  }
+  
+  /* Balance row styling */
+  .balance-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    border-top: 2px solid #000; /* Dark black border */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+    font-size: 1.1rem; /* Slightly larger font size */
+    text-shadow: 1px 1px 0 #000; /* Black outline for text */
+  }
+  
+  /* Balance row labels */
+  .balance-row span:first-child {
+    color: #000000; /* Bright yellow for labels */
+  }
+  
+  /* Balance row values */
+  .balance-row span:last-child {
+    font-weight: bold;
+  }
+ /* Export buttons container */
+.export-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between buttons */
+    margin-top: 1rem; /* Space above the buttons */
+  }
+  
+  /* Export buttons styling */
+  .export-buttons button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #000; /* Dark black border */
+    border-radius: 8px; /* Rounded edges */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    color: #000; /* Dark black text */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+    font-size: 0.9rem; /* Smaller font size */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 120px; /* Set a fixed width to ensure buttons are the same size */
+    text-align: center; /* Center text inside the button */
+  }
+  
+  .export-buttons button:hover {
+    background: rgba(240, 240, 240, 0.9); /* Slightly darker on hover */
+  }
+  
+  /* Select month styling */
+  .date-filter {
+    margin-top: 1rem; /* Space above the select month input */
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between the select month input and export buttons */
+  }
+  
+  /* Select month input styling */
+  .date-input {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 2px solid #000; /* Dark black border */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Cartoonish font */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+  
+  /* Delete button styling */
+.delete-button {
+    background-color: #e74c3c; /* Red color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  

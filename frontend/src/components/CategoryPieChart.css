@@ -1,0 +1,56 @@
+/* CategoryPieChart.css */
+
+.pie-chart-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+  }
+  
+  .pie-chart-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .pie-chart-wrapper {
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pie-chart-error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .download-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #36a2eb;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .download-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Pie chart segment border */
+  .pie-chart-wrapper canvas {
+    border: 5px solid #000; /* Dark black border */
+    border-radius: 8px; /* Rounded edges for cartoon effect */
+  }
+  

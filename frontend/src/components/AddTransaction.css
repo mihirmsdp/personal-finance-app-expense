@@ -1,0 +1,86 @@
+/* AddTransaction.css */
+
+/* Container for the add transaction form */
+.add-transaction-container {
+  background: rgba(135, 206, 250, 0.8); /* Light blue background with slight transparency */
+  padding: 2rem;
+  border-radius: 12px;
+  border: 4px solid #000; /* Dark black border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Title styling */
+.add-transaction-container h2 {
+  color: #ffcc00; /* Bright yellow */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Input and select styling */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 2px solid #000; /* Dark black border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1rem;
+}
+
+/* Placeholder styling */
+.form-group input::placeholder {
+  color: #666;
+  font-style: italic;
+}
+
+/* Button styling */
+button {
+  background: #ffcc00; /* Bright yellow background */
+  color: #000; /* Dark black text */
+  border: 2px solid #000; /* Dark black border */
+  border-radius: 12px; /* Rounded edges */
+  padding: 0.8rem 2rem; /* Larger padding for a more prominent look */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.2rem; /* Slightly larger font size */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #f7e0a3; /* Slightly darker yellow on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+button:active {
+  background: #f1d76a; /* Even darker yellow on active */
+  transform: scale(0.95); /* Slightly smaller on click */
+}
+
+/* Button focus state */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #ffcc00; /* Bright yellow outline on focus */
+}

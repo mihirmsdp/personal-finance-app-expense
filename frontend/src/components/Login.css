@@ -1,0 +1,79 @@
+/* Login.css */
+
+/* Full page background to ensure transparency */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: transparent; /* Ensure the background is transparent */
+  }
+  
+  /* Container for centering the form */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent; /* Make sure the container background is transparent */
+  }
+  
+  /* Title of the form */
+  .login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid #000; /* Black border */
+    border-radius: 12px; /* Rounded edges */
+    background: rgba(255, 255, 255, 0); /* Fully transparent form background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  /* Input fields styling */
+  .login-input {
+    padding: 0.75rem;
+    border: 2px solid #000; /* Black border */
+    border-radius: 8px; /* Rounded edges */
+    font-size: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+    transition: border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent input background */
+  }
+  
+  .login-input:focus {
+    border-color: #ff6384; /* Change border color on focus */
+    outline: none;
+  }
+  
+  /* Button styling */
+  .login-button {
+    padding: 0.75rem;
+    border: 2px solid #000; /* Black border */
+    border-radius: 8px; /* Rounded edges */
+    background: #ff6384; /* Cartoonish pink background */
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background: #ff9f40; /* Change background on hover */
+    border-color: #000; /* Keep black border on hover */
+  }
+  
+  .login-button:focus {
+    outline: none;
+  }
+  

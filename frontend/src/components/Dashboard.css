@@ -1,0 +1,64 @@
+.dashboard-container {
+    background-color: transparent; /* Make the container background transparent */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dashboard-side-by-side {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  .transaction-list {
+    flex: 3; /* Takes up more space */
+    min-width: 0; /* Allows it to shrink if needed */
+    background-color: transparent; /* Ensure transparency */
+  }
+  
+  .daily-summary {
+    flex: 5; /* Takes up less space */
+    min-width: 0; /* Allows it to shrink if needed */
+    max-width: 400px; /* Limits the maximum width */
+    background-color: transparent; /* Ensure transparency */
+  }
+  
+  .category-pie-chart {
+    width: 100%; /* Ensures the chart takes full width of its container */
+    background-color: transparent; /* Ensure transparency */
+  }
+
+  .dashboard-title {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoonish font */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #f7e22f; /* Dark yellow color */
+    text-shadow: 
+      1px 1px 0 #000, /* Black outline */
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      2px 2px 0 #000, /* Slightly larger black outline */
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000; /* Makes the text outline stand out */
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-side-by-side {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .transaction-list, .daily-summary {
+      min-width: 100%; /* Makes each component take full width on small screens */
+    }
+  }
+  

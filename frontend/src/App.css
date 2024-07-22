@@ -1,0 +1,191 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  background: #f9f9f9;
+  /* Light grid background */
+  background-image: linear-gradient(to right, #f1f1f1 1px, transparent 1px),
+                    linear-gradient(to bottom, #f1f1f1 1px, transparent 1px);
+  background-size: 20px 20px; /* Grid size */
+}
+
+h1, h2 {
+  color: #4a4a4a;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background: #6e8efb;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: #5c7cfa;
+}
+
+.container {
+  background: transparent; /* Ensure transparency */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+}
+
+.container .error {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filter-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filter-label {
+  flex-shrink: 0;
+}
+
+.filter-input {
+  flex-grow: 1;
+}
+
+.date-picker-container {
+  position: relative;
+}
+
+.date-picker-button {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.date-picker-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Hide by default */
+}
+
+.date-picker-popup.visible {
+  display: block;
+}
+
+.transaction-list {
+  background: transparent; /* Ensure transparency */
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.list-item .description {
+  font-weight: normal;
+}
+
+.list-item .amount {
+  font-weight: bold;
+}
+
+.balance-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.dashboard-container {
+  background-color: transparent; /* Make the container background transparent */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard-side-by-side {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.transaction-list {
+  flex: 3; /* Takes up more space */
+  min-width: 0; /* Allows it to shrink if needed */
+}
+
+.daily-summary {
+  flex: 5; /* Takes up less space */
+  min-width: 0; /* Allows it to shrink if needed */
+  max-width: 400px; /* Limits the maximum width */
+}
+
+.category-pie-chart {
+  width: 100%; /* Ensures the chart takes full width of its container */
+}
+
+@media (max-width: 768px) {
+  .dashboard-side-by-side {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .transaction-list, .daily-summary {
+    min-width: 100%; /* Makes each component take full width on small screens */
+  }
+}
